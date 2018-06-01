@@ -19,7 +19,6 @@ class Battlefield {
         while ($this->humans->alive() > 0 && $this->zombies->alive() > 0) {
             $human = $this->getRandomHuman();
             $zombie = $this->getRandomZombie();
-            if($terrain = 'Forest')
 
             if ($human instanceof Human && !$this->enraged) {
                 $buff = 0;
